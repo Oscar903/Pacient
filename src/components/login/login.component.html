@@ -1,0 +1,63 @@
+
+  <body>
+    <div class="login">
+        <form #loginForm="ngForm" (ngSubmit)="btnLogin()" class="py-2" role="form">
+          <div class="login-screen">
+            <div>
+             <img src="assets/img/hospital.jpg" style="width: 115.5%; margin-left: -20px; border-radius: 10px 10px 0px 0px" /><br />
+            </div>
+            <br>
+            <div class="app-title">
+            </div>
+         
+            <div >
+              <div class="control-group">
+                <input  #correo="ngModel" value="" name="correo" [(ngModel)]="user.correo" type="text" class="login-field" placeholder="Correo electrónico" required="" id="login-name"/>
+            <label for="login-name" class="login-field-icon fui-user" ></label>  
+            </div>
+        
+           
+          <div class="control-group">
+              <input #password="ngModel" name="password" [(ngModel)]="user.password" type="password" class="login-field" value="" placeholder="Contraseña" required="" id="login-pass" />
+            <label class="login-field-icon fui-lock" for="login-pass" ></label>
+            </div>
+      
+              <button
+               type="submit">
+               <a class="btn btn-outline-primary btn-lg btn-block" >login</a>
+              </button>
+   
+              <li><a routerLink="../registro">Registro</a></li>
+            </div>
+          </div>
+        </form>
+        </div>
+      </body>
+     <!-- <html>
+        <head>
+          <meta charset="utf-8">
+          <title>Form Login | Fazt</title>
+        </head>
+        <body>
+      
+          <div class="login-box">
+            <img src="assets/img/mujer.png" class="avatar" alt="Avatar Image">
+            <h1>Login Here</h1>
+            <form  #loginForm="ngForm" (ngSubmit)="btnLogin()">
+               USERNAME INPUT 
+              <label for="username">Username</label>
+              <input  #correo="ngModel" value="" name="correo" [(ngModel)]="user.correo" type="text" placeholder="correo">
+               PASSWORD INPUT 
+              <label for="password">Password</label>
+              <input  #password="ngModel" name="password" [(ngModel)]="user.password" type="password" placeholder="Password">
+              <button
+              type="submit">
+              <a  value="Log In">>login</a>
+             </button>
+             <input type="submit" value="Log In">
+              <a href="#">Lost your Password?</a><br>
+              <li><a routerLink="../registro">Registro</a></li>
+            </form>
+          </div>
+        </body>
+      </html>-->
